@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASHION.POLO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-feather-pointed"></i>
+                <h1>FASHION.POLO</h1>
+            </div>
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="text-content">
+                <span>outfit of the day</span>
+                <h3>all your</h3>
+                <h1>style are here</h1>
+                <p>Shop Your Everyday Classics — Get The Best Of Fashion From Your Favourite Brands On FASHION.POLO At Great Deals & Discounts.
+                    Shoppable Looks From India's Top Influencers At fashion flow Studio.<br> Hurry Up And Shop Now. OMG Deals. Premium Brands.<br> </p>
+                <a href="#" class="btn">buy now</a>
+            </div>
+            <div class="div-img">
+               <img id="big-Image" src="img/fullsett.png" alt="">
+            </div>
+            <div class="small-img">
+                <img onclick="myTshirt(this.src)" src="img/WHITETSHIRT.png" alt="">
+                <img onclick="myTshirt(this.src)" src="img/BLKSHOES.png" alt="">
+                <img onclick="myTshirt(this.src)" src="img/ORANGETSHIRT.png" alt="">
+                <img onclick="myTshirt(this.src)" src="img/GREENUSPA.png" alt="">
+                <img onclick="myTshirt(this.src)" src="img/BROWNSHOES.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let bigImage = document.getElementById('big-Image');
+
+        function myTshirt(shirt) {
+            bigImage.src = shirt;
+        }
+    </script>
+</body>
+</html>
